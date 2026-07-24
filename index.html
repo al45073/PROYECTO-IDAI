@@ -1,349 +1,220 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería La Tuerca</title>
 
-<title>Ferretería La Tuerca</title>
+<link rel="stylesheet" href="estilos.css">
 
-<style>
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#ececec;
-    margin:0;
-}
-
-header{
-    background:orange;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-nav{
-    background:#333;
-    text-align:center;
-    padding:15px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:20px;
-    font-weight:bold;
-}
-
-nav a:hover{
-    color:yellow;
-}
-
-marquee{
-    padding:8px;
-    font-weight:bold;
-}
-
-section{
-    padding:20px;
-}
-
-h2{
-    color:darkblue;
-}
-
-.productos{
-    display:flex;
-    justify-content:space-around;
-    flex-wrap:wrap;
-}
-
-.tarjeta{
-    background:white;
-    width:250px;
-    text-align:center;
-    margin:15px;
-    border-radius:10px;
-    box-shadow:0px 0px 10px gray;
-    padding:15px;
-}
-
-.tarjeta img{
-    width:200px;
-    height:170px;
-}
-
-.tarjeta:hover{
-    transform:scale(1.05);
-    transition:.4s;
-}
-
-table{
-    width:80%;
-    margin:auto;
-    border-collapse:collapse;
-}
-
-table,th,td{
-    border:1px solid black;
-}
-
-th{
-    background:orange;
-    color:white;
-}
-
-th,td{
-    padding:10px;
-    text-align:center;
-}
-
-form{
-    background:white;
-    width:50%;
-    margin:auto;
-    padding:20px;
-    border-radius:10px;
-}
-
-input,textarea{
-    width:100%;
-    padding:10px;
-    margin-top:10px;
-    margin-bottom:15px;
-}
-
-button{
-    background:orange;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    cursor:pointer;
-}
-
-button:hover{
-    background:darkorange;
-}
-
-iframe{
-    width:100%;
-}
-
-footer{
-    background:#333;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-</style>
-
-</head>
+        </head>
 
 <body>
 
-<header>
-<h1>🔩 Ferretería La Tuerca 🔨</h1>
-<p>Todo para la construcción y el hogar</p>
-</header>
+    <header>
+
+    <div class="logo">
+    <h1>🔩 Ferretería La Tuerca 🔨</h1>
+    <p>Todo para la construcción y el hogar</p>
+    </div>
+
+    </header>
 
 <nav>
-<a href="#inicio">Inicio</a>
-<a href="#productos">Productos</a>
-<a href="#precios">Precios</a>
-<a href="#servicios">Servicios</a>
-<a href="#contacto">Contacto</a>
+
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="ofertas.html">Ofertas</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="galeria.html">Galería</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+
 </nav>
 
-<marquee bgcolor="yellow">
-🎉 ¡Bienvenidos! Descuentos especiales en herramientas y materiales de construcción.
+<marquee>
+🎉 Bienvenido a Ferretería La Tuerca | Calidad, Precio y Servicio
 </marquee>
 
-<section id="inicio">
+<section class="banner">
 
-<h2>Bienvenidos</h2>
+    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400" alt="Ferretería">
 
-<p>
-Somos una empresa dedicada a la venta de herramientas,
-material eléctrico, pinturas y materiales para construcción.
-Ofrecemos productos de excelente calidad al mejor precio.
+<div class="texto-banner">
+
+<h2>Las mejores herramientas para tus proyectos</h2>
+
+<p>Contamos con materiales para construcción, electricidad, plomería y carpintería.</p>
+
+<a href="productos.html" class="boton">
+Ver Productos
+</a>
+
+</div>
+
+</section>
+
+<section class="bienvenida">
+
+<h2>Bienvenido</h2>
+
+    <p>
+
+En Ferretería La Tuerca tenemos más de 20 años ofreciendo herramientas, pinturas,
+material eléctrico, plomería y artículos para construcción.
+
+Nuestro objetivo es brindar productos de calidad con los mejores precios del mercado.
+
 </p>
 
 </section>
 
-<section id="productos">
+<section>
 
-<h2>Nuestros Productos</h2>
+<h2 class="titulo">Productos Destacados</h2>
 
 <div class="productos">
 
 <div class="tarjeta">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0rHd7AvnD4j2UvlpZO0EpFTh14ZibxSHs5UGURYEyrbLO9-qkPeKboiPf&s=10">
+
+    <img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=500">
+
 <h3>Martillo</h3>
-<p>Ideal para trabajos de carpintería.</p>
+
+<p>Ideal para carpintería.</p>
+
+<h4>$180</h4>
+
 </div>
 
 <div class="tarjeta">
-<img src="https://yaqui.com.mx/cdn/shop/products/TALI-20A_e5f53438-0d59-48a3-9daa-ba9ec1ceab32.jpg?v=1746478029">
+
+    <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=500">
+
 <h3>Taladro</h3>
-<p>Potente y resistente para cualquier trabajo.</p>
+
+    <p>Potencia profesional.</p>
+
+<h4>$1,450</h4>
+
 </div>
 
 <div class="tarjeta">
-<img src="https://m.media-amazon.com/images/I/61voGlbVmQL._AC_UF894,1000_QL80_.jpg">
-<h3>Destornillador</h3>
-<p>Juego de diferentes medidas.</p>
+
+    <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=500">
+
+<h3>Destornilladores</h3>
+
+<p>Juego de 10 piezas.</p>
+
+<h4>$120</h4>
+
+</div>
+
+<div class="tarjeta">
+
+    <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=500">
+
+<h3>Pintura</h3>
+
+<p>Interior y exterior.</p>
+
+<h4>$390</h4>
+
 </div>
 
 </div>
 
 </section>
 
-<section id="precios">
+<section class="marcas">
 
-<h2>Lista de Precios</h2>
+<h2>Marcas que manejamos</h2>
 
-<table>
+<div class="logos">
 
-<tr>
-<th>Producto</th>
-<th>Precio</th>
-</tr>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Bosch-logo.svg">
 
-<tr>
-<td>Martillo</td>
-<td>$180</td>
-</tr>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Makita_logo.svg">
 
-<tr>
-<td>Taladro</td>
-<td>$1,450</td>
-</tr>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/DeWalt_logo.svg">
 
-<tr>
-<td>Destornillador</td>
-<td>$120</td>
-</tr>
-
-<tr>
-<td>Pintura</td>
-<td>$390</td>
-</tr>
-
-<tr>
-<td>Caja de Tornillos</td>
-<td>$90</td>
-</tr>
-
-</table>
+</div>
 
 </section>
 
-<section id="servicios">
+<section class="beneficios">
 
-<h2>Servicios</h2>
+<h2>¿Por qué elegirnos?</h2>
 
-<ul>
+<div class="cajas">
 
-<li>✔ Venta de herramientas</li>
+<div>
 
-<li>✔ Material para construcción</li>
+<h3>🚚 Envíos</h3>
 
-<li>✔ Pinturas para interiores y exteriores</li>
+<p>Entrega rápida en Monterrey.</p>
 
-<li>✔ Asesoría personalizada</li>
+</div>
 
-<li>✔ Entrega a domicilio</li>
+<div>
 
-<li>✔ Atención a empresas y particulares</li>
+<h3>💳 Pagos</h3>
 
-</ul>
+<p>Aceptamos tarjetas y transferencias.</p>
 
-</section>
+</div>
 
-<section>
+<div>
 
-<h2>Promoción</h2>
+<h3>⭐ Calidad</h3>
 
-<marquee bgcolor="orange" direction="right">
+<p>Productos garantizados.</p>
 
-🔥 ¡10% de descuento en herramientas eléctricas durante todo el mes!
+</div>
 
-</marquee>
+<div>
 
-</section>
+<h3>👨‍🔧 Asesoría</h3>
 
-<section>
+<p>Te ayudamos a elegir.</p>
 
-<h2>Horario</h2>
+</div>
 
-<p><b>Lunes a Viernes:</b> 7:00 AM - 7:00 PM</p>
-
-<p><b>Sábado:</b> 8:00 AM - 5:00 PM</p>
-
-<p><b>Domingo:</b> Cerrado</p>
+</div>
 
 </section>
 
-<section id="contacto">
+<section class="video">
 
-<h2>Contáctanos</h2>
-
-<p><b>Teléfono:</b> 8183320698</p>
-
-<p><b>Correo:</b> ferreterialatuerca@gmail.com</p>
-
-<p><b>WhatsApp:</b> 81 8332 0698</p>
-
-<form>
-
-<label>Nombre</label>
-
-<input type="text" placeholder="Escribe tu nombre">
-
-<label>Correo</label>
-
-<input type="email" placeholder="Escribe tu correo">
-
-<label>Mensaje</label>
-
-<textarea rows="5"></textarea>
-
-<button>Enviar</button>
-
-</form>
-
-</section>
-
-<section>
-
-<h2>Ubicación</h2>
+<h2>Conoce nuestra tienda</h2>
 
 <p>
 Av. Almazán 604, Lomas de Anáhuac, Monterrey, Nuevo León.
 </p>
 
-<iframe
-src="https://maps.google.com/maps?q=Av.+Almazan+604,+Lomas+de+Anahuac,+Monterrey,+Nuevo+León&t=&z=13&ie=UTF8&iwloc=&output=embed"
-height="350">
-</iframe>
+    <iframe
+        src="https://maps.google.com/maps?q=Av.+Almazan+604,+Lomas+de+Anahuac,+Monterrey,+Nuevo+León&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        height="400">
+    </iframe>
 
 </section>
 
-<footer>
+    <footer>
 
-<h3>Ferretería La Tuerca</h3>
+<h2>Ferretería La Tuerca</h2>
 
 <p>📍 Monterrey, Nuevo León</p>
 
-<p>📞 8183320698</p>
+<p>📞 81 8332 0698</p>
 
 <p>✉ ferreterialatuerca@gmail.com</p>
 
 <hr>
 
-<p>© 2026 Ferretería La Tuerca | Todos los derechos reservados.</p>
+<p>© 2026 Todos los derechos reservados.</p>
 
-</footer>
+    </footer>
 
-</body>
+    </body>
 </html>
