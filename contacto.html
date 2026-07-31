@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Contacto</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Contacto y Cotización</h1>
+
+</header>
+
+<nav>
+
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="ofertas.html">Ofertas</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+
+</nav>
+
+<section class="bienvenida">
+
+<h2>Solicita una cotización</h2>
+
+<form>
+
+<label>Nombre</label><br>
+<input type="text" id="nombre"><br><br>
+
+<label>Producto</label><br>
+
+<select id="producto">
+
+<option value="180">Martillo</option>
+
+<option value="1450">Taladro</option>
+
+<option value="120">Destornilladores</option>
+
+<option value="390">Pintura</option>
+
+</select>
+
+<br><br>
+
+<label>Cantidad</label><br>
+
+<input type="number" id="cantidad" value="1">
+
+<br><br>
+
+<button type="button" onclick="cotizar()">
+
+Calcular Cotización
+
+</button>
+
+</form>
+
+<h2 id="resultado"></h2>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
